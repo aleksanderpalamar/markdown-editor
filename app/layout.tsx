@@ -20,7 +20,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" disableTransitionOnChange>
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
